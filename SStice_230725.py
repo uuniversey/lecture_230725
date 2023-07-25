@@ -175,11 +175,89 @@ print(new_dict2)
 
 # 깊은 복사
 
-import copy
+# import copy
 
-original_list = [1, 2, [1,2]]
-deep_copied_list = copy.deepcopy(original_list)
+# original_list = [1, 2, [1,2]]
+# deep_copied_list = copy.deepcopy(original_list)
 
-deep_copied_list[2][0] = 999
+# deep_copied_list[2][0] = 999
 
-print(original_list, deep_copied_list) # [1, 2, [1, 2]] [1, 2, [999, 2]]
+# print(original_list, deep_copied_list) # [1, 2, [1, 2]] [1, 2, [999, 2]]
+
+
+# 별 찍기 -9
+
+# case = int(input())
+
+# for i in range(case):
+#     print(' ' * i + '*' * (2*case-(2*(i))-1))
+
+# for i in range(case-1):
+#     print(' ' * (case-2-i) + '*' * (2*i + 3))
+
+
+
+# 별 찍기 -10
+
+star_list = ['***', '* *', '   ']
+x = int(input())
+def star(x):
+    if x == 3:
+            print(star_list[0])
+            print(star_list[1])
+            print(star_list[0])
+
+
+    elif x == 9:
+        print(star_list[0] * 3)
+        print(star_list[1] * 3)
+        print(star_list[0] * 3)
+        print(star_list[0] + star_list[-1] + star_list[0])
+        print(star_list[1] + star_list[-1] + star_list[1])
+        print(star_list[0] + star_list[-1] + star_list[0])
+        print(star_list[0] * 3)
+        print(star_list[1] * 3)
+        print(star_list[0] * 3)
+
+    elif x == 27:
+        print(star_list[0] * 9)
+        print(star_list[1] * 9)
+        print(star_list[0] * 9)
+        print((star_list[0] + star_list[-1] + star_list[0]) * 3)
+        print((star_list[1] + star_list[-1] + star_list[1]) * 3)
+        print((star_list[0] + star_list[-1] + star_list[0]) * 3)
+        print(star_list[0] * 9)
+        print(star_list[1] * 9)
+        print(star_list[0] * 9)
+        print((star_list[0]) * 3 + (star_list[-1]) * 3 + (star_list[0])* 3)
+        print((star_list[1]) * 3 + (star_list[-1]) * 3 + (star_list[1])* 3)
+        print((star_list[0]) * 3 + (star_list[-1]) * 3 + (star_list[0])* 3)
+        print((star_list[0] + star_list[-1] + star_list[0] + (star_list[-1]* 3) + star_list[0] + star_list[-1] + star_list[0] ))
+        print((star_list[1] + star_list[-1] + star_list[1] + (star_list[-1]* 3) + star_list[1] + star_list[-1] + star_list[1] ))
+        print((star_list[0] + star_list[-1] + star_list[0] + (star_list[-1]* 3) + star_list[0] + star_list[-1] + star_list[0] ))
+        print((star_list[0]) * 3 + (star_list[-1]) * 3 + (star_list[0])* 3)
+        print((star_list[1]) * 3 + (star_list[-1]) * 3 + (star_list[1])* 3)
+        print((star_list[0]) * 3 + (star_list[-1]) * 3 + (star_list[0])* 3)
+        print(star_list[0] * 9)
+        print(star_list[1] * 9)
+        print(star_list[0] * 9)
+        print((star_list[0] + star_list[-1] + star_list[0]) * 3)
+        print((star_list[1] + star_list[-1] + star_list[1]) * 3)
+        print((star_list[0] + star_list[-1] + star_list[0]) * 3)
+        print(star_list[0] * 9)
+        print(star_list[1] * 9)
+        print(star_list[0] * 9)
+
+    return star_list.pop() 
+
+print (star(x))
+
+
+
+
+
+# 별 찍기 -11
+
+
+
+
